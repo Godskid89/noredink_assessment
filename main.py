@@ -31,9 +31,9 @@ def main(no_questions):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Please enter the number of questions for the quiz.")
-    parser.add_argument("num_questions", type=int, help="any number greater than zero")
+    parser.add_argument("no_questions", type=int, help="any number greater than zero")
     args = parser.parse_args()
-    ques_no = args.num_questions
+    ques_no = args.no_questions
 
     assert ques_no > 0, 'Only numbers greater than 0'
     assert isinstance(ques_no, int), 'only integers are allowed'
